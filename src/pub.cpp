@@ -76,6 +76,7 @@ int main(int argc, char **argv)
 
         std_msgs::Int32 message;
         message.data = 123;
+        pub.publish(message);
         cout << "Position x "<< x <<setprecision(5)<< endl;
         cout << "Yaw angle "<< yaw <<setprecision(5)<< endl;
         cout << "Message data "<< message.data <<setprecision(5)<< endl;
